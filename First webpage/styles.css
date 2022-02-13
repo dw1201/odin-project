@@ -4,3 +4,20 @@ head {
     font:roboto;
 
 }
+
+body {
+    
+}
+
+#photo-container {
+    display: flex;
+
+}
+
+.tile {
+    color:blue;
+    border-style: ridge;
+    border-width: 2px;
+    display: flex;
+    flex-flow: wrap;
+}
