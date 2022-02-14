@@ -5,19 +5,37 @@ head {
 
 }
 
-body {
+/* body {
     
-}
+} */
 
 #photo-container {
+    border:1px solid black;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
 
+img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: contain;
+}
+
+.img-subtext {
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-flow: row wrap;
 }
 
 .tile {
-    color:blue;
-    border-style: ridge;
-    border-width: 2px;
-    display: flex;
-    flex-flow: wrap;
+    width:150px;
+    height:150px;
+    padding: 5px;
+    margin:20px;
+    border: 2px solid blue;
+    border-radius: 25px;
+    display:flex;
 }
