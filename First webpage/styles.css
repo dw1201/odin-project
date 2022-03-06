@@ -1,35 +1,44 @@
 /*styles.css*/
 
+h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+} 
 
-footer {
-    padding:25px;
+.ux_headerIcon {
+    width: 150px;
+    height: 150px;
+}
+
+.ux_navbar {
     background-color: #1F2937;
     color:white;
-    display:flex;
-    justify-content: center;
+}
+
+#web_title {
+    background-color: #1F2937;
+    color: #f9faf8;
+    display: flex;
+    flex-flow: column;
+}
+
+.ux_titlePic img{
+    width: 20%;
+    height: auto;
+
+    display: flex;
     flex-flow: row;
 }
 
-h1 {
-    background-color: #1F2937;
-    color: white;
-}
-
-img {
-    max-width: 200%;
-    max-height: auto;
-    object-fit: contain;
-    border:2px solid blue;
-    border-radius: 20px;
-}
 
 #photo-container {
-    border:1px solid black;
+    /* border:1px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
 }
+
 
 .subtext {
     display: flex;
@@ -44,4 +53,30 @@ img {
     flex-flow: column;
     align-content: center;
     justify-content: center;
+}
+
+.content-tile img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: contain;
+    border:2px solid #3882f6;
+    border-radius: 20px;
+}
+
+
+.ux-quotation {
+    background-color: #e5e7eb;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+footer {
+    padding:25px;
+    background-color: #1F2937;
+    color:white;
+    display:flex;
+    justify-content: center;
+    flex-flow: row;
 }
