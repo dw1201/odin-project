@@ -9,13 +9,6 @@ head {
     
 } */
 
-#photo-container {
-    border:1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: row wrap;
-}
 
 img {
     max-width: 100%;
@@ -23,11 +16,25 @@ img {
     object-fit: contain;
 }
 
-.img-subtext {
+#photo-container {
+    border:1px solid black;
+    margin-bottom: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#img-subtext {
+    border: 2px solid blue;
+    display:flex;
     justify-content: center;
     align-items: center;
-    display:flex;
     flex-flow: row wrap;
+}
+
+.subtext {
+    display: flex;
 }
 
 .tile {
@@ -38,4 +45,4 @@ img {
     border: 2px solid blue;
     border-radius: 25px;
     display:flex;
-}
+}   
