@@ -16,15 +16,15 @@
 
  body {
      font-family: Arial, Helvetica, sans-serif;
+     background-color: #1F2937;
+     margin:0;
+     display: flex;
+     flex-direction: column;
  }
 
  /*``````````````````````
     2.Nav bar
 ````````````````````````*/
-h1 {
-    font-size: 48px;
-    font-weight: extra-bold;
-} 
 
 .ux_headerIcon {
     width: 150px;
@@ -32,26 +32,34 @@ h1 {
 }
 
 .ux_navbar {
-    background-color: #1F2937;
     color:white;
+    display:flex;
+    justify-content: end;
+    
 }
 
 
 /*`````````````````````
     3.Header
 ```````````````````````*/
+h1 {
+    font-size: 48px;
+    font-weight: extra-bold;
+} 
+
 .ux_header{
     background-color: #1F2937;
     color: #f9faf8;
     padding:100px;
     display: flex;
+    gap:20px;
+    justify-content: space-between;
 }
 
 .ux_title {
-    padding: 10px;
     gap:20px;
     display:flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-items: baseline;
     justify-content: center;
 }
@@ -60,7 +68,6 @@ h1 {
     background-color: #3882f6;
     color: white;
     padding: 10px;
-    justify-content: center;
 
 }
 
@@ -72,7 +79,7 @@ h1 {
 
 .ux_titleImg img{
     max-width: 50%;
-    max-height: auto;
+    max-height:max-content;
     object-fit: contain;
 }
 
@@ -81,9 +88,8 @@ h1 {
 ```````````````````````` */
 
 .photo-container {
-    /* border:1px solid black; */
+    background-color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-flow: row wrap;
 }
@@ -121,6 +127,8 @@ h1 {
 ``````````````````````` */
 .ux-quotation {
     background-color: #e5e7eb;
+    padding: 0px;
+    margin: 0px;
     color: #1F2937;
     font-size: 36px;
     font-weight: lighter;
@@ -131,16 +139,17 @@ h1 {
 /*`````````````````````
     6.Sign up
 ``````````````````````` */
-
+.ux_signup {
+    color:white;
+}
 
 /*``````````````````````
     7.Footer
 ````````````````````````*/
-footer {
-    padding:25px;
-    background-color: #1F2937;
+.footer {
     color:white;
     display:flex;
+    margin-top:auto;
+    padding-bottom: 0;
     justify-content: center;
-    flex-flow: row;
 }
