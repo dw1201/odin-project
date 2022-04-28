@@ -4,10 +4,6 @@ function computerPlay(){
     return(choice[random]);
 }
 
-const playerSelection = "rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerPlay));
-
 function playRound(playerSelection, computerSelection){
     console.log(playerSelection);
     console.log(computerSelection(computerPlay));
@@ -19,15 +15,18 @@ function playRound(playerSelection, computerSelection){
         } else if(computerSelection === "scissor") {
             console.log("You Win! Rock beats scissor!");
         }
-        } else if (playerSelection == "paper") {
-            if (computerSelection == "rock"){
-                console.log("");
-            }
         }
     }
 
+    const playerSelection = "rock";
+    const computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerPlay));
+    
+
 // function playerSelection(){
 //    ask player for choice with prompt
+//    change to lower case
+//    return player selection
 // }
 
 
