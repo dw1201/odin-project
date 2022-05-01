@@ -1,8 +1,9 @@
 function game(playerSelection,computerSelection, playerScore) {
     console.log("Let's play a best out of 5 game of Rock, Paper, Scissors!");
+    
     for (let i = 0; i < 5; i++) {
         playerPlay();
-        playRound(playerSelection, computerSelection, playerScore);
+        playRound(playerSelection, computerSelection);
         if (playerScore > 3) {
             console.log("You win with a score of " + playerScore + "!");
         } else {
@@ -12,9 +13,10 @@ function game(playerSelection,computerSelection, playerScore) {
 }
 
 function playerPlay(){
-    let playerChoice = "";
-    playerChoice = prompt("Rock, Paper, or Scissors? ").trim().toLowerCase();
-    return playerChoice;
+    let playerChoice = ["rock", "paper", "scissor"];
+    let random = Math.floor(Math.random() * playerChoice.length);
+    //playerChoice = prompt("Rock, Paper, or Scissor? ").trim().toLowerCase();
+    return playerChoice[random];
     }
 
 function computerPlay(){
@@ -40,7 +42,7 @@ function playRound(playerSelection, computerSelection) {
     
     const playerSelection = playerPlay();
     const computerSelection = computerPlay();
-    console.log(playRound(playerSelection,computerSelection));
+   // console.log(playRound(playerSelection,computerSelection));
     console.log(game(playerSelection, computerSelection));
 
     
